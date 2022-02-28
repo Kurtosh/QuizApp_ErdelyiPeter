@@ -14,11 +14,12 @@
             <RadioButton x:Name="gomb2" Content="asdasd" Height="87" Width="290"/>
             <RadioButton x:Name="gomb3" Content="asdas" Height="87" Width="290"/>
             <RadioButton x:Name="gomb4" Content="asdasd" Height="87" Width="290"/>
-            <ProgressBar Height="30" Width="590" Maximum="10" Minimum="1"/>
+            <ProgressBar x:Name="PB" Height="30" Width="590" Maximum="10" Minimum="1" Value="1"/>
 
 
         </WrapPanel>
-        <Button Content="Előző" Width="111" Height="47" Margin="22,350,459,22" IsEnabled="False"/>
-        <Button Content="Következő" Width="111" Height="47" Margin="460,350,21,22"/>
+        <Button x:Name="elozo" Content="Előző" Width="111" Height="47" Margin="22,350,459,22" IsEnabled="False" Click="elozo_Click"/>
+        <Button x:Name="kovetkezo" Content="Következő" Width="111" Height="47" Margin="460,350,21,22" Click="kovetkezo_Click"/>
+        <Button x:Name="kiertekeles" Content="Kiértékelés" Width="111" Height="47" Margin="240,350,241,22"/>
     </Grid>
 </Window>

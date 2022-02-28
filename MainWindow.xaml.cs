@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,35 @@ namespace QuizApp_ErdélyiPéter
     {
         public MainWindow()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            
+        }
+        private void kovetkezo_Click(object sender, RoutedEventArgs e)
+        {
+            PB.Value++;
+            if (PB.Value > 1)
+            {
+                elozo.IsEnabled = true;
+
+            }
+            else
+            {
+                elozo.IsEnabled = false;
+            }
+        }
+
+        private void elozo_Click(object sender, RoutedEventArgs e)
+        {
+            PB.Value--;
+            if (PB.Value > 1)
+            {
+                elozo.IsEnabled = true;
+
+            }
+            else
+            {
+                elozo.IsEnabled = false;
+            }
         }
     }
 }
