@@ -144,6 +144,14 @@ namespace QuizApp_ErdélyiPéter
             {
                 elozo.IsEnabled = false;
             }
+            if (PB.Value == 10)
+            {
+                kovetkezo.IsEnabled = false;
+            }
+            else
+            {
+                kovetkezo.IsEnabled = true;
+            }
             for (int i = 1; i <= 10; i++)
             {
                 if (PB.Value == i)
