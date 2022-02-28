@@ -10,16 +10,16 @@
 
         <WrapPanel>
             <Label x:Name="kerdes" Content="Kérdés" HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="592"/>
-            <RadioButton x:Name="gomb1" Content="asdasd" Height="87" Width="290"/>
-            <RadioButton x:Name="gomb2" Content="asdasd" Height="87" Width="290"/>
-            <RadioButton x:Name="gomb3" Content="asdas" Height="87" Width="290"/>
-            <RadioButton x:Name="gomb4" Content="asdasd" Height="87" Width="290"/>
+            <RadioButton x:Name="gomb1" Content="asdasd" Height="87" Width="290" Click="gomb1_Click"/>
+            <RadioButton x:Name="gomb2" Content="asdasd" Height="87" Width="290" Click="gomb2_Click"/>
+            <RadioButton x:Name="gomb3" Content="asdas" Height="87" Width="290" Click="gomb3_Click"/>
+            <RadioButton x:Name="gomb4" Content="asdasd" Height="87" Width="290" Click="gomb4_Click"/>
             <ProgressBar x:Name="PB" Height="30" Width="590" Maximum="10" Minimum="1" Value="1"/>
 
 
         </WrapPanel>
         <Button x:Name="elozo" Content="Előző" Margin="38,350,466,34" IsEnabled="False" Click="elozo_Click"/>
         <Button x:Name="kovetkezo" Content="Következő" Margin="460,350,48,34" Click="kovetkezo_Click"/>
-        <Button x:Name="kiertekeles" Content="Kiértékelés" Margin="252,350,255,34"/>
+        <Button x:Name="kiertekeles" Content="Kiértékelés" Margin="252,350,255,34" Click="kiertekeles_Click"/>
     </Grid>
 </Window>

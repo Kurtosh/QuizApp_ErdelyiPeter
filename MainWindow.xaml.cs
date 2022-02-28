@@ -24,6 +24,7 @@ namespace QuizApp_ErdélyiPéter
         public string[] kerdesek;
         public string[] valaszok;
         public string[] hValaszok;
+        public int pontok = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -49,6 +50,14 @@ namespace QuizApp_ErdélyiPéter
             {
                 elozo.IsEnabled = false;
             }
+            if (PB.Value == 10)
+            {
+                kovetkezo.IsEnabled = false;
+            }
+            else
+            {
+                kovetkezo.IsEnabled = true;
+            }
             for (int i = 1; i <= 10; i++)
             {
                 if (PB.Value == i)
@@ -57,6 +66,10 @@ namespace QuizApp_ErdélyiPéter
                     gomb1.Content = valaszok[(i - 1) * 4];
                 }
             }
+            gomb1.IsChecked = false;
+            gomb2.IsChecked = false;
+            gomb3.IsChecked = false;
+            gomb4.IsChecked = false;
             if (PB.Value == 1)
             {
                 gomb2.Content = valaszok[1];
@@ -199,6 +212,307 @@ namespace QuizApp_ErdélyiPéter
                 gomb3.Content = valaszok[38];
                 gomb4.Content = valaszok[39];
             }
+        }
+
+        private void gomb1_Click(object sender, RoutedEventArgs e)
+        {
+            if (PB.Value == 1)
+            {
+                if ((string)gomb1.Content == hValaszok[0])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 2)
+            {
+                if ((string)gomb1.Content == hValaszok[1])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 3)
+            {
+                if ((string)gomb1.Content == hValaszok[2])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 4)
+            {
+                if ((string)gomb1.Content == hValaszok[3])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 5)
+            {
+                if ((string)gomb1.Content == hValaszok[4])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 6)
+            {
+                if ((string)gomb1.Content == hValaszok[5])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 7)
+            {
+                if ((string)gomb1.Content == hValaszok[6])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 8)
+            {
+                if ((string)gomb1.Content == hValaszok[7])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 9)
+            {
+                if ((string)gomb1.Content == hValaszok[8])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 10)
+            {
+                if ((string)gomb1.Content == hValaszok[9])
+                {
+                    pontok++;
+                }
+            }
+        }
+
+        private void gomb2_Click(object sender, RoutedEventArgs e)
+        {
+            if (PB.Value == 1)
+            {
+                if ((string)gomb2.Content == hValaszok[0])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 2)
+            {
+                if ((string)gomb2.Content == hValaszok[1])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 3)
+            {
+                if ((string)gomb2.Content == hValaszok[2])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 4)
+            {
+                if ((string)gomb2.Content == hValaszok[3])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 5)
+            {
+                if ((string)gomb2.Content == hValaszok[4])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 6)
+            {
+                if ((string)gomb2.Content == hValaszok[5])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 7)
+            {
+                if ((string)gomb2.Content == hValaszok[6])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 8)
+            {
+                if ((string)gomb2.Content == hValaszok[7])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 9)
+            {
+                if ((string)gomb2.Content == hValaszok[8])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 10)
+            {
+                if ((string)gomb2.Content == hValaszok[9])
+                {
+                    pontok++;
+                }
+            }
+        }
+
+        private void gomb3_Click(object sender, RoutedEventArgs e)
+        {
+            if (PB.Value == 1)
+            {
+                if ((string)gomb3.Content == hValaszok[0])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 2)
+            {
+                if ((string)gomb3.Content == hValaszok[1])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 3)
+            {
+                if ((string)gomb3.Content == hValaszok[2])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 4)
+            {
+                if ((string)gomb3.Content == hValaszok[3])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 5)
+            {
+                if ((string)gomb3.Content == hValaszok[4])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 6)
+            {
+                if ((string)gomb3.Content == hValaszok[5])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 7)
+            {
+                if ((string)gomb3.Content == hValaszok[6])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 8)
+            {
+                if ((string)gomb3.Content == hValaszok[7])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 9)
+            {
+                if ((string)gomb3.Content == hValaszok[8])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 10)
+            {
+                if ((string)gomb3.Content == hValaszok[9])
+                {
+                    pontok++;
+                }
+            }
+        }
+
+        private void gomb4_Click(object sender, RoutedEventArgs e)
+        {
+            if (PB.Value == 1)
+            {
+                if ((string)gomb4.Content == hValaszok[0])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 2)
+            {
+                if ((string)gomb4.Content == hValaszok[1])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 3)
+            {
+                if ((string)gomb4.Content == hValaszok[2])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 4)
+            {
+                if ((string)gomb4.Content == hValaszok[3])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 5)
+            {
+                if ((string)gomb4.Content == hValaszok[4])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 6)
+            {
+                if ((string)gomb4.Content == hValaszok[5])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 7)
+            {
+                if ((string)gomb4.Content == hValaszok[6])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 8)
+            {
+                if ((string)gomb4.Content == hValaszok[7])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 9)
+            {
+                if ((string)gomb4.Content == hValaszok[8])
+                {
+                    pontok++;
+                }
+            }
+            if (PB.Value == 10)
+            {
+                if ((string)gomb4.Content == hValaszok[9])
+                {
+                    pontok++;
+                }
+            }
+        }
+
+        private void kiertekeles_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"10-ből {pontok} lett jó.");
         }
     }
 }
