@@ -22,7 +22,7 @@ namespace QuizApp_ErdélyiPéter
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
     }
 }

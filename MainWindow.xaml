@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuizApp_ErdélyiPéter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="600">
     <Grid>
         
+        <WrapPanel>
+            <Label x:Name="kerdes" Content="Kérdés" HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="592"/>
+            <RadioButton x:Name="gomb1" Content="asdasd" Height="87" Width="290"/>
+            <RadioButton x:Name="gomb2" Content="asdasd" Height="87" Width="290"/>
+            <RadioButton x:Name="gomb3" Content="asdas" Height="87" Width="290"/>
+            <RadioButton x:Name="gomb4" Content="asdasd" Height="87" Width="290"/>
+            <ProgressBar Height="30" Width="590" Maximum="10" Minimum="1"/>
+
+
+        </WrapPanel>
+        <Button Content="Előző" Width="111" Height="47" Margin="22,350,459,22" IsEnabled="False"/>
+        <Button Content="Következő" Width="111" Height="47" Margin="460,350,21,22"/>
     </Grid>
 </Window>
