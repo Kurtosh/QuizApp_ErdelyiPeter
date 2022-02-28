@@ -152,6 +152,10 @@ namespace QuizApp_ErdélyiPéter
             {
                 kovetkezo.IsEnabled = true;
             }
+            gomb1.IsChecked = false;
+            gomb2.IsChecked = false;
+            gomb3.IsChecked = false;
+            gomb4.IsChecked = false;
             for (int i = 1; i <= 10; i++)
             {
                 if (PB.Value == i)
