@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="600">
     <Grid>
-        
+
         <WrapPanel>
             <Label x:Name="kerdes" Content="Kérdés" HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="592"/>
             <RadioButton x:Name="gomb1" Content="asdasd" Height="87" Width="290"/>
@@ -18,8 +18,8 @@
 
 
         </WrapPanel>
-        <Button x:Name="elozo" Content="Előző" Width="111" Height="47" Margin="22,350,459,22" IsEnabled="False" Click="elozo_Click"/>
-        <Button x:Name="kovetkezo" Content="Következő" Width="111" Height="47" Margin="460,350,21,22" Click="kovetkezo_Click"/>
-        <Button x:Name="kiertekeles" Content="Kiértékelés" Width="111" Height="47" Margin="240,350,241,22"/>
+        <Button x:Name="elozo" Content="Előző" Margin="38,350,466,34" IsEnabled="False" Click="elozo_Click"/>
+        <Button x:Name="kovetkezo" Content="Következő" Margin="460,350,48,34" Click="kovetkezo_Click"/>
+        <Button x:Name="kiertekeles" Content="Kiértékelés" Margin="252,350,255,34"/>
     </Grid>
 </Window>
